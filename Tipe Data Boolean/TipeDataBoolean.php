@@ -1,9 +1,9 @@
 <?php
 
-echo "Benar : ";
+echo "Benar: ";
 var_dump(true);
 
-echo "Salah : ";
+echo "Salah: ";
 var_dump(false)
 
 ?>
