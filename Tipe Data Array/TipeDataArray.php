@@ -19,9 +19,9 @@ var_dump($name);
 $name[] = "Ali"; // menambah data di array pada posisi paling belakang
 var_dump($name);
 
-unset($name[1]);
+unset($name[1]); // menghapus value
 var_dump($name);
 
-var_dump(count($name));
+var_dump(count($name)); // menampilkan jumlah value
 
 ?>
