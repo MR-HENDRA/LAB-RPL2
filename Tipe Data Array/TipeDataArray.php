@@ -1,5 +1,6 @@
 <?php
 
+
 #---> 1. Array adalah tipe data yang berisikan kosong atau banyak data. 
 #---> 2. Array di PHP bisa berisikan data dengan jenis berbeda-beda.
 #---> 3. Array di PHP memiliki panjang dinamis, artinya kita bisa menambah data ke Array
