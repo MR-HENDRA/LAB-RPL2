@@ -24,6 +24,7 @@ var_dump($name);
 
 var_dump(count($name)); // menampilkan jumlah value
 
+<<<<<<< HEAD:Tipe Data Array/TypeDataArray.php
 // ARRAY SEBAGAI MAP
 
 $hendra = array(
@@ -61,3 +62,6 @@ var_dump($hendra["address"]["city"]);
 
 
 ?>
+=======
+?>
+>>>>>>> 17d298c39fab0c903bfbb613f6b3c83cbbf83b82:Tipe Data Array/TipeDataArray.php
