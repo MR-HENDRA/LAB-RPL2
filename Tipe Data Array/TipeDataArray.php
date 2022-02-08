@@ -24,4 +24,38 @@ var_dump($name);
 
 var_dump(count($name)); // menampilkan jumlah value
 
+// ARRAY SEBAGAI MAP
+
+$hendra = array(
+    "id" => "Hendra",
+    "name" => "Hendra Usman",
+    "age" => 18
+);
+var_dump($hendra);
+
+var_dump($hendra["age"]);
+
+$hendri = [
+    "id" => "Hendri",
+    "name" => "Hendri Ali",
+    "age" => 18
+];
+var_dump($hendri);
+
+var_dump($hendri["id"]);
+
+// ARRAY DI DALAM ARRAY
+
+$hendra = array (
+    "id" => "Hendra",
+    "name" => "Hendra Usman",
+    "age" => 18,
+    "address" => [
+        "city" => "Mamuju Tengah",
+        "country" => "Indonesia"
+    ]
+
+);
+var_dump($hendra);
+var_dump($hendra["address"]["city"]);
 ?>
