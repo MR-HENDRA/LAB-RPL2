@@ -1,7 +1,7 @@
 <?php
-
-// Array Associative
-// key nya adalah string yang kita buat sendiri
+// SUPERGLOBALS
+// Variable global milik php
+// merupakan Array Associative 
 
 $mahasiswa = [
     [
@@ -20,13 +20,11 @@ $mahasiswa = [
         "gambar" => "fyan.jpeg"
     ]
 ];
-
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar Mahasiswa</title>
+    <title>GET</title>
     <style type="text/css">
         IMG {
             width: 100px;
@@ -35,14 +33,13 @@ $mahasiswa = [
     </style>
 </head>
 <body>
-    <h1>Daftar Mahasiswa</h1>
-
-    <?php foreach($mahasiswa as $mhs): ?>
-        <ul>
-            <li id="IMG"><IMG src="IMG/<?= $mhs["gambar"] ?>"></li>
-            <li>Nama : <?= $mhs["nama"]?></li>
-            <li>NIM : <?= $mhs["NIM"]?></li>
-            <li>Jurusan: <?= $mhs["jurusan"]?></li>
-            <li>Email: <?= $mhs["email"]?></li>
-        </ul>
-    <?php endforeach; ?>
+<h1>Daftar Mahasiswa</h1>
+<ul>
+<?php foreach( $mahasiswa as $mhs) : ?>
+    <li>
+        <a href="Latihan2.php?nama=<?= $mhs["nama"]; ?>&NIM=<?= $mhs["NIM"]; ?>&email=<?= $mhs["email"]; ?>&jurusan=<?= $mhs["jurusan"]; ?>&gambar=<?= $mhs["gambar"];?>"><?= $mhs["nama"]; ?></a>
+    </li>
+<?php endforeach; ?>
+</ul>
+</body>
+</html>
